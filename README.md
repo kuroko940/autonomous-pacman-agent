@@ -13,6 +13,7 @@ La grande spécificité de cette version est qu'il s'agit d'un environnement par
 ## Architecture du Code
 Le projet s'articule autour de plusieurs classes Java fournies pour modéliser le jeu :
 * `BeliefState` : Modélise un ensemble de croyances regroupant les états dans lesquels peut se trouver le jeu. Cette classe permet notamment d'inférer la position des fantômes invisibles en fonction de leurs derniers déplacements connus.
+* `AI` : La classe contenant la logique décisionnelle principale.
 * `Result` : Gère une liste d'états de croyance résultant d'une action du Pac-Man, en séparant les états qui ne correspondent pas au même percept (ce que l'agent voit ou non).
 * `Plans` : Représente les résultats possibles d'un ensemble d'actions effectuées à partir d'un même état de croyance. 
 * `Position` : Permet de manipuler les coordonnées (ligne, colonne) et la direction des entités sur le plateau.
